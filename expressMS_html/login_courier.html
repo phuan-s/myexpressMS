@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Courier-登录</title>
+		<!-- ZUI 标准版压缩后的 CSS 文件 -->
+		<link rel="stylesheet" href="dist/css/zui.min.css">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+
+	
+	<body style="background-color: #e8eaf2;">
+		<div class="container-fluid"
+			style="display: flex;width: 100%; height: 100%; position: absolute; vertical-align: middle;">
+			<div class="panel" style="text-align: center; max-width: 350px; width: 100%; margin: auto;">
+				<div class="panel-body" style>
+					<img src="img/logo.jpg" width="80px" height="80px" class="img-circle" alt="圆形图片">
+					<div class="form-horizontal" style="padding-top: 13pt; padding-bottom: 10pt; font-size: 15pt;">
+						福通快递-快递员端</div>
+					<div>
+						<div class="input-group with-padding box">
+							<span class="input-group-addon"><i class="icon icon-user"></i></span>
+							<input type="text" class="form-control" placeholder="请输入工号" id="account1">
+						</div>
+						<div class="input-group with-padding box">
+							<span class="input-group-addon"><i class="icon icon-key"></i></span>
+							<input type="password" class="form-control" placeholder="请输入密码" id="pw1">
+							<img src="img/eye_open.png" alt="" id="eye" onclick="changeEye()">
+						</div>
+						<div class="input-group with-padding box" style="padding-bottom: 10pt;">
+							<span class="input-group-addon">验证码</span>
+							<input type="text" class="form-control" id="input_captcha"
+								placeholder="请输入验证码">
+							<span class="input-group-addon btn" onclick="generateCaptcha()"></span>
+							    <canvas id="captchaCanvas" width="80" height="30"></canvas>
+						</div>
+						<div class="with-padding" style="padding-bottom: 0pt;" X>
+							<button type="submit" class="btn btn-block btn-primary font-w400" onclick="login1()">
+								<span><i class="icon icon-signin"></i>&nbsp;&nbsp;&nbsp;登陆</span>
+							</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="with-padding" style="background-color: #f8f9fa; height: 25pt;">
+					<a href="#" style="float: right;padding-right: 10%;"></a>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+
+	
+	<!-- ZUI Javascript 依赖 jQuery -->
+	<script src="dist/lib/jquery/jquery.js"></script>
+	<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+	<script src="dist/js/zui.min.js"></script>
+	<!-- 内容分离 -->
+	<script src="js/login.js"></script>
+	
+	
+</html>

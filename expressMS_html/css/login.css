@@ -1,0 +1,22 @@
+.box {
+	padding-bottom: 10pt;
+}
+
+.box input {
+	position: relative;
+	background-color: #f8f9fa;
+}
+
+.box img {
+	position: absolute;
+	cursor: pointer;
+	height: 20px;
+	right: 20px;
+	top: 10px;
+	z-index: 2;
+}
+
+.box canvas {
+	display: flex;
+	vertical-align: middle;
+}
