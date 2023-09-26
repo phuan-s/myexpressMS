@@ -5,28 +5,8 @@
 		<title>福通快递-注册</title>
 		<!-- ZUI 标准版压缩后的 CSS 文件 -->
 		<link rel="stylesheet" href="dist/css/zui.min.css">
-
+		<link rel="stylesheet" href="css/login.css">
 	</head>
-
-	<style>
-		.box {
-			padding-bottom: 10pt;
-		}
-
-		.box input {
-			position: relative;
-			background-color: #f8f9fa;
-		}
-
-		.box img {
-			position: absolute;
-			cursor: pointer;
-			height: 20px;
-			right: 20px;
-			top: 10px;
-			z-index: 2;
-		}
-	</style>
 
 	<body style="background-color: #e8eaf2;">
 		<div class="container-fluid"
@@ -57,9 +37,9 @@
 							<input type="password" class="form-control" placeholder="请确认密码" id="confirmPassword">
 						</div>
 						<div class="input-group with-padding box">
-							<span class="input-group-addon"><i class="icon icon-key"></i></span>
+							<span class="input-group-addon"><i class="icon icon-heart-empty"></i></span>
 							<div class="form-control with-padding">
-								<input type="radio" name="SEX">男
+								<input type="radio" name="SEX">男 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<input type="radio" name="SEX">女
 							</div>
 						</div>
@@ -79,7 +59,7 @@
 
 				</div>
 				<div class="with-padding" style="background-color: #f8f9fa; height: 25pt;">
-					<a href="http://127.0.0.1:8848/expressMS/login.html#"
+					<a href="login_user.html"
 						style="float: left;padding-left: 10%;">返回登录</a>
 					<a href="#" style="float: right;padding-right: 10%;">重新填写</a>
 				</div>

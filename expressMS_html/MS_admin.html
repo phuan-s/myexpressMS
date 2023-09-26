@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>admin福通快递管理平台</title>
+		<!-- ZUI 标准版压缩后的 CSS 文件 -->
+		<link rel="stylesheet" href="dist/css/zui.min.css">
+		<link rel="stylesheet" href="css/MS.css">
+		<link href="lib/dashboard/zui.dashboard.min.css" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<div>
+			<!-- 导航条 -->
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container-fluid">
+					<!-- 导航头部 -->
+					<div class="navbar-header" style="height: 30pt;">
+						<!-- 移动设备上的导航切换按钮 -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-collapse-example">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- 品牌名称或logo -->
+						<a class="navbar-brand" href="your/nice/url">福通快递</a>
+					</div>
+					<!-- 导航项目 -->
+					<div class="collapse navbar-collapse navbar-collapse-example">
+						<!-- 一般导航项目 -->
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="your/nice/url">管理平台</a></li>
+							<!-- <li><a href="your/nice/url">需求</a></li> -->
+							<!-- 导航中的下拉菜单 -->
+							<!-- <li class="dropdown"> -->
+							<!-- <a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">管理 <b -->
+							<!-- class="caret"></b></a> -->
+							<!-- <ul class="dropdown-menu" role="menu"> -->
+							<!-- <li><a href="your/nice/url">任务</a></li> -->
+							<!-- ... -->
+							<!-- </ul> -->
+							<!-- </li> -->
+						</ul>
+						<!-- 右侧的导航项目 -->
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="your/nice/url">帮助</a></li>
+							<li class="dropdown">
+								<a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">账户名<b
+										class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="your/nice/url"><i class="icon icon-user"></i>个人中心</a></li>
+									<li><a href="http://127.0.0.1:8848/expressMS/login.html#"><i
+												class="icon icon-signout"></i>登出</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- END .navbar-collapse -->
+				</div>
+			</nav>
+
+
+			<div class="row" style="display: flex; height: 100%;">
+				<!-- 左侧菜单栏 -->
+				<div class="col-xs-3" style="height: 100%;">
+					<ul class="nav nav-tabs nav-stacked">
+						<li class="active"><a href="###" data-target="#tab3Content1" data-toggle="tab"><i
+									class="icon icon-list-alt" style="padding-right: 5pt;"></i>网点管理</a></li>
+						<li><a href="###" data-target="#tab3Content2" data-toggle="tab"><i class="icon icon-dashboard"
+									style="padding-right: 5pt;"></i>订单管理</a></li>
+						<!-- <li><a href="###" data-target="#tab3Content3" data-toggle="tab"><i class="icon icon-group"
+									style="padding-right: 5pt;"></i>数据展示</a></li> -->
+						<li><a href="baidu.com" data-target="#tab3Content4" data-toggle="tab"><i
+									class="icon icon-archive" style="padding-right: 5pt;"></i>仓库管理</a></li>
+					</ul>
+				</div>
+
+				<!-- 主体部分 -->
+				<div class="col-xs-9">
+					<div class="tab-content col-xs-9" style="width: 100%;">				
+						
+						<!-- 网点管理部分 -->
+						<div class="tab-pane fade active in" id="tab3Content1">
+							<h1 style="text-align: center;padding-bottom: 15px">网点管理</h1> 
+							    <!-- 搜索框 -->
+							    <div class="box" style= "padding-top: 10px;padding-bottom: 15px;">
+							        <form class="form-inline">
+							            <div class="form-group with-padding">
+							                <label for="searchByAddress">地址搜索:</label>
+							                <select class="form-control">
+							                  <option value="">请选择地址</option>
+							                  <option value="apple">铜盘校区</option>
+							                  <option value="banana">旗山校区</option>
+							                  <option value="orange">怡山校区</option>
+											  <option value="orange">泉港校区</option>
+											  <option value="orange">晋江校区</option>
+							                </select>
+							            </div>
+							            <div class="form-group with-padding">
+							                <label for="searchByCode">网点编号搜索:</label>
+							                <input type="text" class="form-control" id="searchByCode" placeholder="输入网点编号">
+							            </div>
+										<div class="form-group with-padding">
+										<button type="submit" class="btn btn-primary with-padding">搜索</button>
+										<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal" onclick="add()">新增网点</button>
+										<div class="modal fade" id="myModal">
+										  <div class="modal-dialog">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+										        <h4 class="modal-title">标题</h4>
+										      </div>
+										      <div class="modal-body">
+										        <p>主题内容...</p>
+										      </div>
+										      <div class="modal-footer">
+										        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+										        <button type="button" class="btn btn-primary">保存</button>
+										      </div>
+										    </div>
+										  </div>
+										</div>
+									
+										</div>
+									</form>
+							    </div>
+							
+							    <!-- 信息展示表格 -->
+								<div class="box">
+							    <table class="table">
+							        <thead>
+							            <tr>
+							                <th>网点编号</th>
+							                <th>网点名称</th>
+							                <th>地址</th>
+							                <th>管理员工号</th>
+							                <th>正常营业</th>
+											<th>管理</th>
+							            </tr>
+							        </thead>
+							        <tbody>
+							            <!-- 后期使用服务器端数据生成表格行 -->
+							            <tr>
+							                <td>0001</td>
+							                <td>网点1</td>
+							                <td>旗山校区</td>
+							                <td>000011</td>
+							                <td>正常营业</td>
+											<td>营业时间2</td>
+							            </tr>
+							            <tr>
+							                <td>0002</td>
+							                <td>网点2</td>
+							                <td>旗山校区</td>
+							                <td>000012</td>
+							                <td>正常营业</td>
+											<td>营业时间2</td>
+							            </tr>
+										<tr>
+										    <td>0003</td>
+										    <td>网点2</td>
+										    <td>铜盘校区</td>
+										    <td>000013</td>
+										    <td>正常营业</td>
+											<td>营业时间2</td>
+										</tr>
+										<tr>
+										    <td>0004</td>
+										    <td>网点2</td>
+										    <td>怡山校区</td>
+										    <td>000014</td>
+										    <td>正常营业</td>
+											<td>营业时间2</td>
+										</tr>
+										<tr>
+										    <td>0005</td>
+										    <td>网点2</td>
+										    <td>晋江校区</td>
+										    <td>000015</td>
+										    <td>未营业</td>
+											<td>营业时间2</td>
+										</tr>
+							            <!-- 可以继续添加更多网点信息 -->
+							        </tbody>
+							    </table>
+								</div>
+							
+							    <div style="text-align: center;">
+							    	<ul class="pager">
+							    		<li class="previous"><a href="your/nice/url">«</a></li>
+							    		<li class="active"><a href="your/nice/url">1</a></li>
+							    		<li><a href="your/nice/url">2</a></li>
+							    		<li><a href="your/nice/url">3</a></li>
+							    		<li><a href="your/nice/url">4</a></li>
+							    		<li><a href="your/nice/url">5</a></li>
+							    		<li class="next"><a href="your/nice/url">»</a></li>
+							    	</ul>
+							    </div>
+						</div>
+						
+						<!-- 订单管理分页面-->
+						<div class="tab-pane fade" id="tab3Content2">
+							<h1 style="text-align: center; padding-bottom: 15px;">订单管理</h1>
+							<!-- 搜索框 -->
+							<div class="box">
+							    <form class="form-inline">
+							        <div class="form-group with-padding">
+							            <label for="searchByCode">运单号搜索:</label>
+							            <input type="text" class="form-control" id="searchByCode" placeholder="输入运单号">
+							        </div>
+									<div class="form-group with-padding">
+									    <label for="searchByCode">手机号搜索:</label>
+									    <input type="text" class="form-control" id="searchByCode" placeholder="输入手机号">
+									</div>
+									<div class="form-group with-padding">
+									    <label for="searchByAddress">运单状态:</label>
+									    <select class="form-control" id="exampleInputAddress1">
+									    	<option>请选择运单状态</option>
+									    	<option>已揽收</option>
+									    	<option>已发货</option>
+									    	<option>待取件</option>
+									    	<option>已签收</option>
+									    	<option>结束</option>
+									    </select>
+									</div>
+									<div class="form-group with-padding">
+									<button type="submit" class="btn btn-primary with-padding">搜索</button>
+									</div>
+								</form>
+							</div>
+						
+							<!-- 信息展示表格 -->
+							<div class="box">
+								<table class="table table-auto with-padding" style="width: 90%;">
+									<thead>
+										<tr>
+											<th>运单号</th>
+											<th>状态信息</th>
+											<th>寄件人电话</th>
+											<th>收件人电话</th>
+											<th>更新时间</th>
+											<th>快递员工号</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>3453453467756</td>
+											<td>已揽收</td>
+											<td>13047586758</td>
+											<td>15786756453</td>
+											<td>2023-09-11</td>
+											<td>10002</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453467456</td>
+											<td>待取件</td>
+											<td>13047580020</td>
+											<td>16589076435</td>
+											<td>2023-09-12</td>
+											<td>10012</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453463657</td>
+											<td>已揽收</td>
+											<td>11394586556</td>
+											<td>18867567898</td>
+											<td>2023-09-11</td>
+											<td>10045</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453438574</td>
+											<td>结束</td>
+											<td>15786756453</td>
+											<td>12354376578</td>
+											<td>2023-09-14</td>
+											<td>10012</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453467098</td>
+											<td>待取件</td>
+											<td>11394586556</td>
+											<td>14576479687</td>
+											<td>2023-09-09</td>
+											<td>10078</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453456371</td>
+											<td>结束</td>
+											<td>15786756453</td>
+											<td>11394586556</td>
+											<td>2023-09-10</td>
+											<td>10034</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div style="text-align: center;">
+								<ul class="pager">
+									<li class="previous"><a href="your/nice/url">«</a></li>
+									<li class="active"><a href="your/nice/url">1</a></li>
+									<li><a href="your/nice/url">2</a></li>
+									<li><a href="your/nice/url">3</a></li>
+									<li><a href="your/nice/url">4</a></li>
+									<li><a href="your/nice/url">5</a></li>
+									<li class="next"><a href="your/nice/url">»</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="tab-pane fade" id="tab3Content3">
+							<div id="dashboard" class="dashboard dashboard-draggable with-padding" data-height="300">
+							  <section class="row">
+							    <div class="col-md-4 col-sm-6">
+							      <div class="panel" data-id="3">
+							        <div class="panel-heading">
+							          <i class="icon icon-table"></i>
+							          <span class="title">包含表格</span>
+							        </div>
+							        <div class="panel-body no-padding">
+							          <canvas id="myChart" width="400" height="400"></canvas>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="col-md-4 col-sm-6">
+							      <div class="panel" data-id="3">
+							        <div class="panel-heading">
+							          <i class="icon icon-table"></i>
+							          <span class="title">包含表格</span>
+							        </div>
+							        <div class="panel-body no-padding">
+							          <table class="table">
+							            <p>面板内容。</p>
+							          </table>
+							        </div>
+							      </div>
+							    </div>
+							
+							    <div class="col-md-6">
+							      <div class="panel" data-id="5" data-url="docs/partial/remote-panel.html">
+							        <div class="panel-heading">
+							          <i class="icon icon-globe"></i>
+							          <span class="title">加载远程内容</span>
+							          <div class="panel-actions">
+							            <button type="button" class="btn refresh-panel" data-toggle="tooltip" title="重新从远程获取内容"><i class="icon-refresh"></i></button>
+							          </div>
+							        </div>
+							        <div class="panel-body">等待加载远程内容。</div>
+							      </div>
+							    </div>
+							    <div class="col-md-6">
+							      <div class="panel" data-id="5" data-url="docs/partial/remote-panel.html">
+							        <div class="panel-heading">
+							          <i class="icon icon-globe"></i>
+							          <span class="title">加载远程内容</span>
+							          <div class="panel-actions">
+							            <button type="button" class="btn refresh-panel" data-toggle="tooltip" title="重新从远程获取内容"><i class="icon-refresh"></i></button>
+							          </div>
+							        </div>
+							        <div class="panel-body">等待加载远程内容。</div>
+							      </div>
+							    </div>
+							    <div class="col-md-8 col-sm-6">
+							      <div class="panel panel-loading" data-id="6">
+							        <div class="panel-heading"><code>.panel-loading</code></div>
+							        <div class="panel-body">
+							          <p>为 <code>.panel</code> 添加 <code>.panel-loading</code> 类即可实现正在加载的外观。</p>
+							        </div>
+							      </div>
+							    </div>
+							  </section>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab3Content4">
+							<h1 style="text-align: center;">仓库管理</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+	</body>
+
+	<script src="lib/chart/zui.chart.min.js"></script>
+	<!-- ZUI Javascript 依赖 jQuery -->
+	<script src="dist/lib/jquery/jquery.js"></script>
+	<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+	<script src="dist/js/zui.min.js"></script>
+	<script src="js/MSadmin.js"></script>
+	<script src="lib/dashboard/zui.dashboard.min.js"></script>
+</html>

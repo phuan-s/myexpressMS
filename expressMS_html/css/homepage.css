@@ -1,0 +1,38 @@
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-brand {
+	font-size: 1.5em;
+}
+
+.nav-tabs {
+	margin-bottom: 20px;
+}
+
+.well {
+	background-color: #f7f7f7;
+	border-radius: 10px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: #f1f1f1;
+}
+
+.box {
+	background-color: #f7f7f7;
+	border-radius: 20px;
+	padding: 15px;
+	margin-bottom: 20px;
+}	
+.box input{
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+.box button{
+	border-radius: 20px;
+}
+.box select{
+	border-radius: 20px;
+}

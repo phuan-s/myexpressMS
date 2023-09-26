@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>福通快递管理平台</title>
+		<!-- ZUI 标准版压缩后的 CSS 文件 -->
+		<link rel="stylesheet" href="dist/css/zui.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="stylesheet" href="css/MS.css">
+	</head>
+
+	<body>
+		<div>
+			<!-- 导航条 -->
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container-fluid">
+					<!-- 导航头部 -->
+					<div class="navbar-header" style="height: 30pt;">
+						<!-- 移动设备上的导航切换按钮 -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-collapse-example">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- 品牌名称或logo -->
+						<a class="navbar-brand" href="your/nice/url">福通快递</a>
+					</div>
+					<!-- 导航项目 -->
+					<div class="collapse navbar-collapse navbar-collapse-example">
+						<!-- 一般导航项目 -->
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="your/nice/url">管理平台</a></li>
+							<!-- <li><a href="your/nice/url">需求</a></li> -->
+							<!-- 导航中的下拉菜单 -->
+							<!-- <li class="dropdown"> -->
+							<!-- <a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">管理 <b -->
+							<!-- class="caret"></b></a> -->
+							<!-- <ul class="dropdown-menu" role="menu"> -->
+							<!-- <li><a href="your/nice/url">任务</a></li> -->
+							<!-- ... -->
+							<!-- </ul> -->
+							<!-- </li> -->
+						</ul>
+						<!-- 右侧的导航项目 -->
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="your/nice/url">帮助</a></li>
+							<li class="dropdown">
+								<a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">账户名<b
+										class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="your/nice/url"><i class="icon icon-user"></i>个人中心</a></li>
+									<li><a href="http://127.0.0.1:8848/expressMS/login.html#"><i
+												class="icon icon-signout"></i>登出</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- END .navbar-collapse -->
+				</div>
+			</nav>
+
+
+			<div class="row" style="display: flex; height: 100%;">
+				<!-- 左侧菜单栏 -->
+				<div class="col-xs-3" style="height: 100%;">
+					<ul class="nav nav-tabs nav-stacked">
+						<li class="active"><a href="###" data-target="#tab3Content1" data-toggle="tab"><i
+									class="icon icon-dashboard" style="padding-right: 5pt;"></i>网点信息</a></li>
+						<li><a href="###" data-target="#tab3Content2" data-toggle="tab"><i class="icon icon-list-alt"
+									style="padding-right: 5pt;"></i>订单信息</a></li>
+						<li><a href="###" data-target="#tab3Content3" data-toggle="tab"><i class="icon icon-group"
+									style="padding-right: 5pt;"></i>网点快递员管理</a></li>
+						<!-- <li><a href="baidu.com" data-target="#tab3Content4" data-toggle="tab"><i
+									class="icon icon-archive" style="padding-right: 5pt;"></i>仓库管理</a></li> -->
+						<li><a href="###" data-target="#tab3Content5" data-toggle="tab"><i
+									class="icon icon-shopping-cart" style="padding-right: 5pt;"></i>网点车辆管理</a></li>
+					</ul>
+				</div>
+
+				<!-- 主体部分 -->
+				<div class="col-xs-9">
+
+					<div class="tab-content col-xs-9" style="width: 100%;">
+						<div class="tab-pane fade active in" id="tab3Content1">
+							<h1 style="text-align: center;margin-bottom: 15px;">仓库与网点管理</h1>
+							<!-- 网点信息 -->
+							<div class="box">
+								<button type="button" class="btn btn-warning" style="float: right;">编辑信息</button>
+								<div class="row">
+									<div class="col-md-6">
+										<h3 style="color: #FF5733;">基础信息</h3>
+										<p><strong>网点名称：</strong>XX快递分支 <i class="fas fa-store"></i></p>
+										<p><strong>负责人工号：</strong>2023456 <i class="fas fa-id-badge"></i></p>
+										<p><strong>联系方式：</strong>+1 234 567 8900 <i class="fas fa-phone"></i></p>
+										<p><strong>快递员数量：</strong>50人 <i class="fas fa-users"></i></p>
+										<p><strong>在库件数：</strong>200件 <i class="fas fa-box"></i></p>
+										<p><strong>地址：</strong>XX路XX号 <i class="fas fa-map-marker-alt"></i></p>
+										<p><strong>营业时间：</strong>9:00 AM - 8:00 PM <i class="fas fa-clock"></i></p>
+									</div>
+									<div class="col-md-6">
+										<h3 style="color: #FF5733;">服务数据</h3>
+										<table class="table table-striped table-bordered">
+											<thead style="background-color: #ffcccb;">
+												<tr>
+													<th>项目</th>
+													<th>数据</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>当月派件量</td>
+													<td>3000</td>
+												</tr>
+												<tr>
+													<td>当月收件量</td>
+													<td>2500</td>
+												</tr>
+												<tr>
+													<td>客户评分</td>
+													<td>4.5/5</td>
+												</tr>
+												<tr>
+													<td>投诉数</td>
+													<td>5</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- 订单管理分页面-->
+						<div class="tab-pane fade" id="tab3Content2">
+							<h1 style="text-align: center; padding-bottom: 15px;">网点订单管理</h1>
+							<!-- 搜索框 -->
+							<div class="box" style="padding-top: 10px;padding-bottom: 15px;">
+								<form class="form-inline">
+									<div class="form-group with-padding">
+										<label for="searchByCode">运单号搜索:</label>
+										<input type="text" class="form-control" id="searchByCode" placeholder="输入运单号">
+									</div>
+									<div class="form-group with-padding">
+										<label for="searchByCode">手机号搜索:</label>
+										<input type="text" class="form-control" id="searchByCode" placeholder="输入手机号">
+									</div>
+									<div class="form-group with-padding">
+										<label for="searchByAddress">运单状态:</label>
+										<select class="form-control" id="exampleInputAddress1">
+											<option>请选择运单状态</option>
+											<option>已揽收</option>
+											<option>已发货</option>
+											<option>待取件</option>
+											<option>已签收</option>
+											<option>结束</option>
+										</select>
+									</div>
+									<div class="form-group with-padding">
+										<button type="submit" class="btn btn-primary with-padding">搜索</button>
+									</div>
+								</form>
+							</div>
+
+							<!-- 信息展示表格 -->
+							<div class="box">
+								<table class="table table-auto with-padding" style="width: 90%;">
+									<thead>
+										<tr>
+											<th>运单号</th>
+											<th>状态信息</th>
+											<th>寄件人电话</th>
+											<th>收件人电话</th>
+											<th>更新时间</th>
+											<th>快递员工号</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>3453453467756</td>
+											<td>已揽收</td>
+											<td>13047586758</td>
+											<td>15786756453</td>
+											<td>2023-09-11</td>
+											<td>10002</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453467456</td>
+											<td>待取件</td>
+											<td>13047580020</td>
+											<td>16589076435</td>
+											<td>2023-09-12</td>
+											<td>10012</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453463657</td>
+											<td>已揽收</td>
+											<td>11394586556</td>
+											<td>18867567898</td>
+											<td>2023-09-11</td>
+											<td>10045</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453438574</td>
+											<td>结束</td>
+											<td>15786756453</td>
+											<td>12354376578</td>
+											<td>2023-09-14</td>
+											<td>10012</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453467098</td>
+											<td>待取件</td>
+											<td>11394586556</td>
+											<td>14576479687</td>
+											<td>2023-09-09</td>
+											<td>10078</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+										<tr>
+											<td>3453453456371</td>
+											<td>结束</td>
+											<td>15786756453</td>
+											<td>11394586556</td>
+											<td>2023-09-10</td>
+											<td>10034</td>
+											<td><a href="">编辑</a>&nbsp|&nbsp<a href="">删除</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div style="text-align: center;">
+								<ul class="pager">
+									<li class="previous"><a href="your/nice/url">«</a></li>
+									<li class="active"><a href="your/nice/url">1</a></li>
+									<li><a href="your/nice/url">2</a></li>
+									<li><a href="your/nice/url">3</a></li>
+									<li><a href="your/nice/url">4</a></li>
+									<li><a href="your/nice/url">5</a></li>
+									<li class="next"><a href="your/nice/url">»</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab3Content3">
+							<h1 style="text-align: center; margin-bottom: 15px;">网点快递员管理</h1>
+							<!-- 搜索框 -->
+							<div class="box">
+								<form class="form-inline">
+									<div class="form-group with-padding">
+										<label for="searchByCode">工号搜索:</label>
+										<input type="text" class="form-control" id="searchByCode" placeholder="输入快递员工号">
+									</div>
+									<div class="form-group with-padding">
+										<label for="searchByCode">姓名搜索:</label>
+										<input type="text" class="form-control" id="searchByCode" placeholder="输入快递员姓名">
+									</div>
+
+									<div class="form-group with-padding">
+										<button type="submit" class="btn btn-primary with-padding">搜索</button>
+									</div>
+								</form>
+							</div>
+
+							<!-- 信息展示表格 -->
+							<div class="box">
+								<table class="table table-auto with-padding" style="width: 90%;">
+									<thead>
+										<tr>
+											<th>工号</th>
+											<th>姓名</th>
+											<th>性别</th>
+											<th>联系方式</th>
+											<th>管理</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>001</td>
+											<td>张三</td>
+											<td>男</td>
+											<td>123-456-7890</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<tr>
+											<td>002</td>
+											<td>李四</td>
+											<td>女</td>
+											<td>987-654-3210</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<tr>
+											<td>003</td>
+											<td>王五</td>
+											<td>男</td>
+											<td>987-654-3210</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<tr>
+											<td>004</td>
+											<td>赵六</td>
+											<td>女</td>
+											<td>987-654-3210</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<tr>
+											<td>005</td>
+											<td>阿七</td>
+											<td>男</td>
+											<td>987-654-3210</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div style="text-align: center;">
+								<ul class="pager">
+									<li class="previous"><a href="your/nice/url">«</a></li>
+									<li class="active"><a href="your/nice/url">1</a></li>
+									<li><a href="your/nice/url">2</a></li>
+									<li><a href="your/nice/url">3</a></li>
+									<li><a href="your/nice/url">4</a></li>
+									<li><a href="your/nice/url">5</a></li>
+									<li class="next"><a href="your/nice/url">»</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab3Content4">
+							<h1 style="text-align: center;">仓库管理</h1>
+							<!-- 搜索框 -->
+							<div class="well with-padding" style="padding-top: 10px;padding-bottom: 15px;">
+								<form class="form-inline">
+									<div class="form-group with-padding">
+										<label for="searchByItemCode">物品编码搜索:</label>
+										<input type="text" class="form-control" id="searchByItemCode"
+											placeholder="输入物品编码">
+									</div>
+									<div class="form-group with-padding">
+										<label for="searchByName">物品名称搜索:</label>
+										<input type="text" class="form-control" id="searchByName" placeholder="输入物品名称">
+									</div>
+									<div class="form-group with-padding">
+										<button type="submit" class="btn btn-primary with-padding">搜索</button>
+									</div>
+								</form>
+							</div>
+
+							<!-- 信息展示表格 -->
+							<div class="container-fluid with-padding ">
+								<table class="table table-auto with-padding" style="width: 90%;">
+									<thead>
+										<tr>
+											<th>物品编码</th>
+											<th>物品名称</th>
+											<th>数量</th>
+											<th>单位</th>
+											<th>管理</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>001</td>
+											<td>钉子</td>
+											<td>500</td>
+											<td>个</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<tr>
+											<td>002</td>
+											<td>电线</td>
+											<td>300</td>
+											<td>米</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<!-- 更多的数据行 -->
+									</tbody>
+								</table>
+							</div>
+
+							<div style="text-align: center;">
+								<ul class="pager">
+									<li class="previous"><a href="your/nice/url">«</a></li>
+									<li class="active"><a href="your/nice/url">1</a></li>
+									<li><a href="your/nice/url">2</a></li>
+									<li><a href="your/nice/url">3</a></li>
+									<li><a href="your/nice/url">4</a></li>
+									<li><a href="your/nice/url">5</a></li>
+									<li class="next"><a href="your/nice/url">»</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab3Content5">
+							<h1 style="text-align: center;">网点车辆管理</h1>
+							<!-- 搜索框 -->
+							<div class="box">
+								<form class="form-inline">
+									<div class="form-group with-padding">
+										<label for="searchByLicense">车牌号搜索:</label>
+										<input type="text" class="form-control" id="searchByLicense"
+											placeholder="输入车牌号">
+									</div>
+									<div class="form-group with-padding">
+										<label for="searchByType">车型搜索:</label>
+										<input type="text" class="form-control" id="searchByType" placeholder="输入车型">
+									</div>
+									<div class="form-group with-padding">
+										<button type="submit" class="btn btn-primary with-padding">搜索</button>
+									</div>
+								</form>
+							</div>
+
+							<!-- 信息展示表格 -->
+							<div class="box">
+								<table class="table table-auto with-padding" style="width: 90%;">
+									<thead>
+										<tr>
+											<th>车牌号</th>
+											<th>车型</th>
+											<th>颜色</th>
+											<th>状态</th>
+											<th>管理</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>粤A12345</td>
+											<td>轿车</td>
+											<td>红色</td>
+											<td>可用</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<tr>
+											<td>粤B67890</td>
+											<td>货车</td>
+											<td>蓝色</td>
+											<td>维修中</td>
+											<td><button>编辑</button> <button>删除</button></td>
+										</tr>
+										<!-- 更多的数据行 -->
+									</tbody>
+								</table>
+							</div>
+
+							<div style="text-align: center;">
+								<ul class="pager">
+									<li class="previous"><a href="your/nice/url">«</a></li>
+									<li class="active"><a href="your/nice/url">1</a></li>
+									<li><a href="your/nice/url">2</a></li>
+									<li><a href="your/nice/url">3</a></li>
+									<li><a href="your/nice/url">4</a></li>
+									<li><a href="your/nice/url">5</a></li>
+									<li class="next"><a href="your/nice/url">»</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+	</body>
+
+	<!-- ZUI Javascript 依赖 jQuery -->
+	<script src="dist/lib/jquery/jquery.js"></script>
+	<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+	<script src="dist/js/zui.min.js"></script>
+</html>
