@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+	</head>
+	<!-- ZUI 标准版压缩后的 CSS 文件 -->
+	<link rel="stylesheet" href="dist/css/zui.min.css">
+
+	<body>
+		<nav class="navbar navbar-inverse hidden-xs" role="navigation">
+			<div class="container-fluid">
+				<!-- 导航头部 -->
+				<div class="navbar-header">
+					<div class="navbar-header">
+						<!-- 移动设备上的导航切换按钮 -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-collapse-example">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- 品牌名称或logo -->
+						<img src="img/logo.jpg" alt="" style="width: 50px;">
+					</div>
+				</div>
+				<!-- 导航项目 -->
+				<div class="collapse navbar-collapse navbar-collapse-example"
+					style="font-size: 18px; margin-top: 5px;margin-bottom: 5px;">
+					<!-- 一般导航项目 -->
+					<ul class="nav navbar-nav" style="margin-left: 15px;">
+						<li class="active"><a href="your/nice/url">学习平台</a></li>
+						<li><a href="your/nice/url">管理平台</a></li>
+						<!-- 导航中的下拉菜单 -->
+						<li class="dropdown">
+							<a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">更多<b
+									class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="your/nice/url">任务</a></li>
+								...
+							</ul>
+						</li>
+					</ul>
+					<!-- 右侧的导航项目 -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="your/nice/url">帮助</a></li>
+						<li class="dropdown">
+							<a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">账户名<b
+									class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="your/nice/url"><i class="icon icon-user"></i>个人中心</a></li>
+								<li><a href="http://127.0.0.1:8848/expressMS/login.html#"><i
+											class="icon icon-signout"></i>登出</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- END .navbar-collapse -->
+			</div>
+		</nav>
+
+		<nav class="navbar navbar-inverse visible-xs" role="navigation">
+			<div class="container-fluid">
+				<!-- 导航头部 -->
+				<div class="navbar-header">
+					<div class="navbar-header">
+						<!-- 移动设备上的导航切换按钮 -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-collapse-example" style="margin-top: 8px;">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- 品牌名称或logo -->
+						<img src="img/logo.jpg" alt="" style="width: 50px;">
+					</div>
+				</div>
+				<!-- 导航项目 -->
+				<div class="collapse navbar-collapse navbar-collapse-example">
+					<!-- 一般导航项目 -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="your/nice/url">项目</a></li>
+						<li><a href="your/nice/url">需求</a></li>
+						<!-- 导航中的下拉菜单 -->
+						<li class="dropdown">
+							<a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">管理 <b
+									class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="your/nice/url">任务</a></li>
+								...
+							</ul>
+						</li>
+					</ul>
+					<!-- 右侧的导航项目 -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="your/nice/url">帮助</a></li>
+						<li class="dropdown">
+							<a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown">探索 <b
+									class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="your/nice/url">敏捷开发</a></li>
+								<li><a href="your/nice/url">HTML5</a></li>
+								<li><a href="your/nice/url">Javascript</a></li>
+								<li class="divider"></li>
+								<li><a href="your/nice/url">探索宇宙</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- END .navbar-collapse -->
+			</div>
+		</nav>
+
+		<div id="myNiceCarousel" class="carousel slide" data-ride="carousel" style="margin-top: -20px; height: 300px;">
+			<!-- 圆点指示器 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myNiceCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myNiceCarousel" data-slide-to="1"></li>
+				<li data-target="#myNiceCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- 轮播项目 -->
+			<div class="carousel-inner" style="">
+				<div class="item active"
+					style="background-image: url('img/banner1.png'); background-size: cover; background-position: center center; width: 100%; height: 300px;">
+				</div>
+				<div class="item"
+					style="background-image: url('img/banner2.png'); background-size: cover; background-position: center center; width: 100%; height: 300px;">
+				</div>
+				<div class="item"
+					style="background-image: url('img/banner3.png'); background-size: cover; background-position: center center; width: 100%; height: 300px;">
+				</div>
+			</div>
+
+			<!-- 项目切换按钮 -->
+			<a class="left carousel-control" href="#myNiceCarousel" data-slide="prev">
+				<span class="icon icon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#myNiceCarousel" data-slide="next">
+				<span class="icon icon-chevron-right"></span>
+			</a>
+		</div>
+
+		<!-- 主体部分1  栅格系统，一行分为12等分-->
+		<div class="col-md-12 col-xs-12 with-padding">
+			<div class="col-md-2 col-xs-2"></div>
+			<div class="col-md-3"><img src="img/pic1.jpg" alt=""></div>
+			<div class="col-md-7 col-xs-12 with-padding">
+				<div class="col-md-12 col-xs-12 with-padding">
+					<div class="col-md-6 col-xs-5">
+						<img src="img/title1.png" alt="">
+					</div>
+					<div class="col-md-4 col-xs-7">
+						<h3>习近平会见哈萨克斯坦总理马西莫夫</h3>
+						要做强互联互通，中方将支持中哈连云港国际物流合作基地以及霍尔果斯国际边境合作中心建设，积极参与哈萨克斯坦国内交通基础设施项目。
+					</div>
+				</div>
+				<div class="col-md-12 col-xs-12 with-padding">
+					<div class="col-md-6 col-xs-5">
+						<img src="img/title2.png" alt="">
+					</div>
+					<div class="col-md-4 col-xs-7">
+						<h3>物流类专业课程思政框架</h3>
+						习近平总书记指出，职业教育“要坚持立德树人”，强调要“加快构建现代职业教育体系，培养更多高素质技术技能人才、能工巧匠、大国工匠”。
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 移动端加个小间距 -->
+		<div class="col-md-13 col-xs-13" style="padding: 5px;">
+
+		</div>
+		<div class="col-md-13  col-xs-13 with-padding" style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
+			<div class="col-md-13 col-xs-13">
+				<h1>成功案例</h1>
+				<h3>我们将您与充满惊喜的世界联系在一起</h3>
+			</div>
+			<div class="col-md-13 hidden-xs with-padding">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-3">
+					<img src="img/success1.jpg" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="img/success2.jpg" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="img/success3.jpg" alt="">
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div>
+			<div class="col-xs-13 visible-xs with-padding">
+				<div class="col-xs-2">
+
+				</div>
+				<div class="col-xs-9">
+					<div id="myNiceCarousel1" class="carousel slide" data-ride="carousel">
+						<!-- 圆点指示器 -->
+						<ol class="carousel-indicators">
+							<li data-target="#myNiceCarousel1" data-slide-to="0" class="active"></li>
+							<li data-target="#myNiceCarousel1" data-slide-to="1"></li>
+							<li data-target="#myNiceCarousel1" data-slide-to="2"></li>
+						</ol>
+
+						<!-- 轮播项目 -->
+						<div class="carousel-inner" style="">
+							<div class="item active">
+								<img alt="First slide" src="img/success1.jpg">
+							</div>
+							<div class="item">
+								<img alt="Second slide" src="img/success2.jpg">
+							</div>
+							<div class="item">
+								<img alt="Third slide" src="img/success3.jpg">
+							</div>
+						</div>
+
+						<!-- 项目切换按钮 -->
+						<a class="left carousel-control" href="#myNiceCarousel1" data-slide="prev">
+							<span class="icon icon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#myNiceCarousel1" data-slide="next">
+							<span class="icon icon-chevron-right"></span>
+						</a>
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 col-xs-12" style="height: 10px;">
+			1
+		</div>
+
+		<!-- 主体部分3-->
+		<div class="col-md-12 col-xs-12" style="background-color: #006eb7;height: 300px; color: white">
+			<!-- logo部分 -->
+			<div class="col-md-12 col-xs-12" style="margin-top: 20px; margin-bottom: 20px;">
+				<div class="col-md-2 col-xs-3"></div>
+				<div class="col-md-4 col-xs-6">
+					<img src="img/logo.jpg" alt="" style="width: 100px;">
+					<br>
+					<font size="4px" color="">汪汪队快递，使命必达！</font>
+				</div>
+			</div>
+			<div class="col-md-12 col-xs-12">
+
+				<div class="col-md-3 col-xs-3">
+
+				</div>
+				<div class="col-md-3 col-xs-3">
+					<font size="4px" color="">公司</font>
+					<br><br>
+					关于我们
+					<br>
+					联系我们
+					<br>
+					加入我们
+					<br>
+					技术博客
+				</div>
+				<div class="col-md-3 col-xs-3">
+					<font size="4px" color="">合作</font>
+					<br><br>
+					我要投稿
+					<br>
+					企业合作
+					<br>
+					高效合作
+					<br>
+					友情链接
+				</div>
+
+				<div class="col-md-3 col-xs-3">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 col-xs-12"
+			style="background-color: #145ccd;height: 20px; text-align: center; color: #9fa5b1;">
+			Copyright @2013-2016 在线教育|蜀ICP备00000000号
+
+		</div>
+	</body>
+	<!-- ZUI Javascript 依赖 jQuery -->
+	<script src="dist/lib/jquery/jquery.js"></script>
+	<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+	<script src="dist/js/zui.min.js"></script>
+	<script src="js/demo0925.js"></script>
+</html>
