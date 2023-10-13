@@ -18,14 +18,15 @@
 					<img src="img/logo.jpg" width="80px" height="80px" class="img-circle" alt="圆形图片">
 					<div class="form-horizontal" style="padding-top: 13pt; padding-bottom: 10pt; font-size: 15pt;">
 						福通快递</div>
+					<form action="doLogin">
 					<div>
 						<div class="input-group with-padding box">
 							<span class="input-group-addon"><i class="icon icon-user"></i></span>
-							<input type="text" class="form-control" placeholder="请输入网点管理员账号" id="account1">
+							<input name="acc" type="text" class="form-control" placeholder="请输入网点管理员账号" id="account1">
 						</div>
 						<div class="input-group with-padding box">
 							<span class="input-group-addon"><i class="icon icon-key"></i></span>
-							<input type="password" class="form-control" placeholder="请输入密钥" id="pw1">
+							<input name="pwd" type="password" class="form-control" placeholder="请输入密钥" id="pw1">
 							<img src="img/eye_open.png" alt="" id="eye" onclick="changeEye()">
 						</div>
 						<div class="input-group with-padding box" style="padding-bottom: 10pt;">
@@ -41,6 +42,7 @@
 							</button>
 						</div>
 					</div>
+					</form>
 
 				</div>
 				<div class="with-padding" style="background-color: #f8f9fa; height: 25pt;">

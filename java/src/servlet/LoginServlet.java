@@ -15,7 +15,6 @@ public class LoginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        System.out.println("一段中文");
         String acc = request.getParameter("acc");
         String pwd = request.getParameter("pwd");
         System.out.println("acc:" + acc + ",pwd:" + pwd);
